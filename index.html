@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <body>
+        <section class="intro">
+            <audio id="miauPlay">
+                <source src="miau.mp3" type="audio/mpeg">
+            </audio>    
+            <label id="dark-change" onclick="playMiau()"></label>
+            <h1>Seja <strong>bem-vindo</strong> terráqueo!</h1>
+            <span class="beta-text">app em beta</span>
+            <p class="top-text"> FEITO PELO MAIS QUENTE!</p>
+        </section>
+        
+        <main class="main-content">
+            <img class="img-main" src="images/astronaut-helmet-animate.svg" alt="avatar">
+            <h2>SpaceCat</h2>
+            <span class="subheading">Astrocats</span>
+            
+            <p>Imagina um rolê de gato no espaço?!?<br>
+                Cadastre o seu já!</p>
+
+            <form>
+                <input type="text" required placeholder="Nome" aria-label="Nome">
+                <input type="email" required placeholder="Email" aria-label="Email">
+                <input type="file" required accept="image/png, image/jpg" aria-label="Choose file">
+                <button class="btn btn-primary">Enviar</button>
+            </form>
+            <p class="fine-print">só compartilhamos sua cara feia com sua autorização</p>
+        </main>
+        <script src="index.js"></script>
+        <script>
+            var myMusic= document.getElementById("miauPlay");
+            function playMiau() {
+            myMusic.currentTime = 0;
+            myMusic.play();
+            }
+        </script>
+    </body>
+</body>
+</html>
